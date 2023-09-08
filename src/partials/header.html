@@ -1,0 +1,41 @@
+<!-- ! Шапка страницы -->
+<header class="hat" id="Home">
+  <div class="container hat__container">
+    <picture class="heder-logo">
+      <source
+        srcset="./images/header/heder-logo.png 1x, ./images/header/heder-logo@2.png 2x"
+        media="(min-width:1140px)"
+      />
+      <source
+        srcset="
+          ./images/header/heder-logo-mobile.png    1x,
+          ./images/header/heder-logo-mobile@2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+      <img src="./images/header/heder-logo-mobile.png" alt="logo" />
+    </picture>
+    <nav class="site-bar">
+      <ul class="site-nav">
+        <li>
+          <a class="site-nav__link animate__animated" href="#Technology">Technology</a>
+        </li>
+        <li>
+          <a class="site-nav__link animate__animated" href="#How">Networks</a>
+        </li>
+        <li>
+          <a class="site-nav__link animate__animated" href="#Our-products">Community</a>
+        </li>
+        <li class="burger-container">
+          <a class="site-nav__link animate__animated" href="#Our-products">Resources</a>
+          <button type="button" class="burger-button mobile-menu-btn" data-menu-open>
+            <svg class="mobile-menu-btn__icon">
+              <use href="./images/symbol-defs-icon.svg#icon-arrow-bottom"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
