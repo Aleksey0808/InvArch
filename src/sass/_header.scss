@@ -1,213 +1,145 @@
 .hat {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1010;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1010;
 
-    background-color: #000000;
+  background-color: #000;
+
+  padding-top: 60px;
+
 }
 
-.heder-logo {
-    width: 134px;
-    height: 22px;
-}
-
-.burger-button {
-  color: #fff;
-    // width: 32px;
-    // height: 32px;
-}
-
-.burger-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hat__container {
+.header {
+  &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
+  }
 
-    padding-top: 12px;
 }
 
-// ! mobile-menu
+.wrapper {
+  display: flex;
+}
 
-.mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #85A279;
+.nav {
+  z-index: 2000;
+  margin-right: 12px;
 
-    overflow-y: scroll;
-    overflow: auto;
-    transform: translateX(100%);
+  &__bar-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
 
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+      color: #FFF;
+      font-family: Inter;
 
-    &.is-open {
-        transform: translateX(0);
+      &:hover {
+        color: #9776BE;
+      }
+
+    }
+
+    &__bar-link {
+      &:hover {
+          color: #9776BE;
+        }
     }
 }
 
-.mobile-menu-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.arrow-btn {
+  width: 10px;
+  height: 10px;
+  background: none;
+}
 
-    margin-bottom: 51px;
+.arrow-icon {
+  width: 10px;
+  height: 10px;
+}
+//////////////////////
+
+.burger-container {
+  width: 450px;
+}
+
+.menu-burger {
+  position: relative;
+}
+
+.mobile-menu {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  position: absolute;
+  top: 95%;
+  right: 100%;
+  width: 222px;
+  height: 165px;
+  opacity: 0;
+
+  overflow: hidden;
+  transform: translateY(-100%);
+
+  transition: opacity;
+
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  border-radius: 10px;
+  border: 1px solid rgba(151, 118, 190, 0.20);
+  background: #0E0D11;
+
+  &.is-open {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .mobile-menu__container {
-    padding-top: 12px;
+  // display: flex;
+  // justify-content: end;
+  // align-items: start;
+  // padding-top: 50px;
+  width: 222px;
 }
 
-.mobile-nav-list {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    align-items: center;
+.mobile-menu-wrapper {
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
 
-    margin-bottom: 111px;
+  // margin-bottom: 51px;
 }
 
-.mobile-menu-by-now-btn {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  // width: 222px;
+  text-align: center;
 }
 
-.mobile-nav-list__link {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.2;
-    color: #FCFCFC;
-
-    &.h-i-m {
-        color: #131313;
-    }
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 12px;
 }
 
-// ! Наш лого
+.mobile-menu-link {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 
-.our-logo {
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
-    z-index: 100;
-    width: 40px;
-    height: 40px;
-
-    animation: 5s linear 0s normal none infinite running rot;
-  -webkit-animation: 5s linear 0s normal none infinite running rot;
-}
-
-@keyframes rot {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @-webkit-keyframes rot {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-@media screen and (min-width: 768px) {
-    .hat__button {
-        display: block;
-    }
-
-    .hat__container {
-        // justify-content: flex-start;
-    }
-
-    .heder-logo {
-        width: 134px;
-          height: 22px;
-    }
-
-    .burger-button {
-        margin-left: 12px;
-    }
-
-    .our-logo {
-        width: 60px;
-        height: 60px;
-    }
-
-    // ! mobile-menu
-
-    .mobile-menu-by-now-btn {
-        display: none;
-    }
-
-    .mobile-menu-wrapper {
-        margin-bottom: 76px;
-    }
-
-    .mobile-nav-list {
-        gap: 40px;
-        margin-bottom: 0;
-    }
-
-    .mobile-nav-list__link {
-        font-size: 48px;
+  &:hover {
+      color: #9776BE;
     }
 }
 
-@media screen and (min-width: 1140px) {
-    .site-bar {
-      width: 460px;
-    }
 
-    .site-nav {
-        display: flex;
-        gap: 27px;
-
-        margin-right: 247px;
-    }
-
-    .site-nav__link {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;
-        color: #FCFCFC;
-        white-space: nowrap;
-        letter-spacing: 0.01em;
-
-        &:hover,
-        &:focus {
-          color: var(--active-color);
-        }
-
-        transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .heder-logo {
-      width: 134px;
-      height: 22px;
-    }
-
-    .burger-button {
-        // display: none;
-    }
-
-    .our-logo {
-        width: 80px;
-        height: 80px;
-        z-index: 100;
-    }
-}

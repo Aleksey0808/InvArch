@@ -1,5 +1,5 @@
 body {
-  font-family: "Montserrat";
+  font-family: "Rubik, Inter";
   color: var(--primary-color);
   font-size: 14px;
   line-height: 2;
@@ -7,7 +7,10 @@ body {
   letter-spacing: 0.04em;
 
   height: 100%;
-  
+
+  font-size: 16px;
+  font-weight: 400;
+
   // background-color: #ffffff;
   // background-image: url('../images/bg-body/ice_cream.jpg');
   // background-size: cover;
@@ -22,7 +25,7 @@ body {
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
   body {
-    background-image: url(../images/bg-body/ice_cream@2x.jpg);
+    // background-image: url(../images/hero/bg-hero.png);
   }
 }
 
@@ -52,6 +55,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 fieldset {
@@ -72,5 +76,5 @@ button {
 }
 
 a, button {
-  cursor: url("/src/images/cursor.png") 4 12, auto;
+  cursor: pointer;
 }
