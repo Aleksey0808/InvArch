@@ -1,11 +1,13 @@
 .apply {
   background-color: #000;
-    background-image: url('../images/applyNow/bg-apply.png');
-      background-repeat: no-repeat;
-      background-position: 100% 100%;
+  background-image: url('../images/applyNow/bg-apply.png');
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: auto 100%, auto auto;
 
-    padding-top: 240px;
-    padding-bottom: 140px;
+  // margin-top: -100px;
+  padding-top: 240px;
+  padding-bottom: 140px;
 
   &__container {
     display: flex;

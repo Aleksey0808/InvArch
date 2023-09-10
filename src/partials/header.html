@@ -27,36 +27,40 @@
         <li>
           <a class="nav__bar-link" href="#Our-products">Community</a>
         </li>
-        <li class="menu-burger">
+        <li class="menu-burger" data-menu-open data-arrow-open data-arrowClose-open>
           <a class="nav__bar-link" href="#Our-products">Resources</a>
+          <button type="button" class="arrow-btn">
+            <div>
+              <svg class="arrow-icon-bottom" data-arrowClose >
+              <use href="./images/symbol-defs-icon.svg#icon-arrow-bottom"></use>
+            </svg>
+            </div>
+            <div>
+              <svg class="arrow-icon-up" data-arrow>
+                <use href="./images/symbol-defs-icon.svg#icon-arrow-up"></use>
+              </svg>
+            </div>
+          </button>
+          <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+
+              <ul class="mobile-menu-list">
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link" href="#Home">InvArch Whitepaper</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link" href="#How it’s made?">InvArch GitHub</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link" href="#Our-products">Saturn SDK</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>
-    <div class="menu-burger">
-      <button type="button" class="arrow-btn" data-menu-open>
-        <svg class="arrow-icon">
-          <use href="./images/symbol-defs-icon.svg#icon-arrow-bottom"></use>
-        </svg>
-      </button>
 
-      <div class="mobile-menu" data-menu>
-        <div class="container mobile-menu__container">
 
-          <ul class="mobile-menu-list">
-            <li class="mobile-menu-item">
-              <a class="mobile-menu-link" href="#Home">InvArch Whitepaper</a>
-            </li>
-            <li class="mobile-menu-item">
-              <a class="mobile-menu-link" href="#How it’s made?">InvArch GitHub</a>
-            </li>
-            <li class="mobile-menu-item">
-              <a class="mobile-menu-link" href="#Our-products">Saturn SDK</a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
-    </div>
-
-
 </header>

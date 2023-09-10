@@ -1,14 +1,13 @@
 .about {
-  z-index: 5000;
   background-image: url('../images/about/bg-left.png'), url('../images/about/bg-center.png'),
     url('../images/about/bg-left2.png');
   background-repeat: no-repeat;
-  background-position: -140px 0, 100% 55%, -180px 120%;
+  background-position: -140px 0, 100% 55%, -190px 130%;
 
   &__container {
     margin-top: -170px;
     margin-bottom: -100px;
-    // z-index: 10000;
+
   }
 
   &__list{

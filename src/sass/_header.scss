@@ -57,9 +57,23 @@
   background: none;
 }
 
-.arrow-icon {
+.arrow-icon-bottom {
   width: 10px;
   height: 10px;
+
+  &.is-close {
+      display: none;
+    }
+}
+
+.arrow-icon-up {
+  width: 10px;
+  height: 10px;
+  display: none;
+
+  &.is-hidden {
+      display: block;
+    }
 }
 //////////////////////
 
@@ -72,19 +86,21 @@
 }
 
 .mobile-menu {
+  z-index: 1;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   position: absolute;
-  top: 95%;
-  right: 100%;
+  top: 100%;
+  left: 0;
   width: 222px;
   height: 165px;
   opacity: 0;
 
   overflow: hidden;
-  transform: translateY(-100%);
+  transform: translateY(-40%);
 
   transition: opacity;
 
@@ -101,22 +117,11 @@
 }
 
 .mobile-menu__container {
-  // display: flex;
-  // justify-content: end;
-  // align-items: start;
-  // padding-top: 50px;
   width: 222px;
 }
 
-.mobile-menu-wrapper {
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
-
-  // margin-bottom: 51px;
-}
-
 .mobile-menu-list {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,7 +141,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-
+  z-index: 50000;
   &:hover {
       color: #9776BE;
     }
