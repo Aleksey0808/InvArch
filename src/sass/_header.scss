@@ -26,29 +26,11 @@
 }
 
 .nav {
-  z-index: 2000;
-  margin-right: 12px;
 
-  &__bar-list {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-
-      color: #FFF;
-      font-family: Inter;
-
-      &:hover {
-        color: #9776BE;
-      }
-
+  @media screen and (max-width: 1140px) {
+      display: none;
     }
 
-    &__bar-link {
-      &:hover {
-          color: #9776BE;
-        }
-    }
 }
 
 .arrow-btn {
@@ -77,11 +59,17 @@
 }
 //////////////////////
 
+.burger-menu {
+  @media screen and (min-width: 1140px) {
+      display: none;
+    }
+}
+
 .burger-container {
   width: 450px;
 }
 
-.menu-burger {
+.menu-arrow {
   position: relative;
 }
 

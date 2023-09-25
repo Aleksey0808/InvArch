@@ -136,23 +136,10 @@ a, button {
   display: flex;
 }
 
-.nav {
-  z-index: 2000;
-  margin-right: 12px;
-}
-.nav__bar-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  color: #FFF;
-  font-family: Inter;
-}
-.nav__bar-list:hover {
-  color: #9776BE;
-}
-.nav__bar-link:hover {
-  color: #9776BE;
+@media screen and (max-width: 1140px) {
+  .nav {
+    display: none;
+  }
 }
 
 .arrow-btn {
@@ -178,11 +165,17 @@ a, button {
   display: block;
 }
 
+@media screen and (min-width: 1140px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
 .burger-container {
   width: 450px;
 }
 
-.menu-burger {
+.menu-arrow {
   position: relative;
 }
 
