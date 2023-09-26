@@ -27,7 +27,7 @@
         <li>
           <a class="nav__bar-link" href="#Our-products">Community</a>
         </li>
-        <li class="menu-arrow" data-menu-open data-arrow-open data-arrowClose-open>
+        <li class="menu-arrow" data-menu-open data-arrow-open>
           <a class="nav__bar-link" href="#Our-products">Resources</a>
           <button type="button" class="arrow-btn">
             <div>
@@ -60,16 +60,20 @@
         </li>
       </ul>
     </nav>
-    <button type="button" class="burger-button">
-       <svg class="burger-button__burger" data-burger-open>
+    <div>
+      <button type="button" class="burger-button" data-burger-open >
+       <svg class="burger-button__burger" >
         <use href="./images/symbol-defs-burger-menu.svg#icon-burger"></use>
       </svg>
     </button>
 
     <div class="burger-menu" data-burger>
+      <p data-burger-close>close</p>
       hello burger menu
     </div>
-    
-     
+    </div>
+
+
+
 
 </header>
