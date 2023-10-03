@@ -40,20 +40,33 @@
   }
 
 &__content {
-  display: flex;
+  @media (min-width: 1140px) {
+    display: flex;
+    
+  }
+  
   justify-content: space-between;
   align-items: center;
+  
 }
 
- &__title {
-   width: 465px;
+&__title {
+  width: 465px;
+  text-align: center;
+  margin-bottom: 100px;
+  @media (min-width: 1140px) {
+   margin-right: 160px;
+  }
+ }
+
+ &__titleText {
+  //  width: 465px;
    color: #FFF;
    font-family: Rubik;
    font-size: 64px;
    font-style: normal;
    font-weight: 700;
-   line-height: normal;
-   margin-right: 160px;
+   line-height: normal; 
  }
 
  &__social-list {
