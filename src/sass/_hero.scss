@@ -8,17 +8,22 @@
   background-size: 100% auto;
 
 
+
   @media (max-width: 767px) {
     padding-top: 80px;
   }
 
   @media (min-width: 768px) {
     padding-top: 110px;
+    padding-bottom: 160px;
   }
 
   @media (min-width: 1140px) {
     padding-top: 300px;
     padding-bottom: 500px;
+  }
+  @media (max-width: 1140px) {
+    padding-bottom: 100px;
   }
 
   &__container {
@@ -61,19 +66,33 @@
 
  &__titleText {
   //  width: 465px;
+    text-align: left;
    color: #FFF;
    font-family: Rubik;
    font-size: 64px;
    font-style: normal;
    font-weight: 700;
-   line-height: normal; 
+   line-height: normal;
+   @media screen and (max-width: 1140px) {
+    font-size: 48px;
+    width: 390px;
+  }
  }
 
  &__social-list {
    display: flex;
+   align-items: center;
+   justify-content: center;
    flex-wrap: wrap;
-   width: 500px;
-   gap: 20px;
+   @media screen and (max-width: 768px) {
+    width: 250px;
+    gap: 10px;
+  }
+   @media screen and (min-width: 768px) {
+    width: 500px;
+    gap: 20px;
+  }
+   
  }
 
  &__social-item {
@@ -86,12 +105,20 @@
   align-items: center;
   height: 92px;
 
-  width: 213px;
-  height: 213px;
-  padding: 70px;
+  
   border-radius: 10px;
   border: 2px solid #292929;
   color: #fff;
+  @media screen and (max-width: 768px) {
+    width: 100px;
+  height: 100px;
+  padding: 30px;
+  }
+   @media screen and (min-width: 768px) {
+    width: 213px;
+    height: 213px;
+    padding: 70px;
+  }
 
 
   &:hover, :active {

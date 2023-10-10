@@ -5,8 +5,15 @@
   background-position: -140px 0, 100% 55%, -190px 130%;
 
   &__container {
-    margin-top: -170px;
-    margin-bottom: -100px;
+    @media screen and (min-width: 1140px) {
+      margin-top: -170px;
+      margin-bottom: -100px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-top: -100px;
+      margin-bottom: -50px;
+    }
+
 
   }
 
@@ -17,12 +24,15 @@
   }
 
   &__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
 
     border-radius: 25px;
     background: #FFF;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
   }
 
   &__info {
@@ -41,6 +51,9 @@
     display: block;
     line-height: normal;
     margin-bottom: 20px;
+    @media screen and (max-width: 1140px) {
+      font-size: 36px;
+    }
   }
 
     &__title-numerous {
